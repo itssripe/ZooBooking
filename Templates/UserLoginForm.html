@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="/OSP_T2/Styles/styles.css">
+</head>
+<body>
+    <nav id="headerbar">
+        <a href="/OSP_T2/Templates/Homepage.html"><img src="/OSP_T2/Images/ZooLogo.png"></a>
+        <a href="/OSP_T2/Templates/UserLoginForm">SignUp/Login</a>
+        <a href="/OSP_T2/Templates/BookZoo.php">Book Tickets</a>
+        <a href="/OSP_T2/Templates/BookHotel.php">Book Hotels</a>
+        <a href="/OSP_T2/Templates/ContactUs.html">Contact Us</a>
+        <a href="/OSP_T2/Templates/AccountPage.php">My Account</a>
+    </nav>
+    <h1>Welcome to the Login page</h1>
+    <p>This is a simple Login web page.</p>
+    <form action="/OSP_T2/Processes/UserLogin.php" method="post">
+        Username or Email<input class="inputbox" type="text" name="Username">
+        Password<input class="inputbox" type="password" name="Password">
+\        <input type="submit" value="Login">
+    </form> 
+    <p>Don't have an account? <a href="/OSP_T2/Templates/UserSignUpForm.html">Sign Up</a></p>
+</body>
+</html>

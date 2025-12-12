@@ -1,0 +1,110 @@
+
+/* General Styles 
+Primary (header/nav): Forest Green #2F7A4F
+
+Secondary (background): Light Leaf Green #DFF5E1
+
+Accent (buttons/hover): Orange #FF9F1C
+
+Text: Dark Charcoal #1C1C1C
+*/
+body {
+    overflow-x:hidden;
+    background-color: #DFF5E1;
+    margin:0; margin-top: 1rem;
+}
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: rgb(145, 251, 215);
+    color:#1C1C1C;
+}
+a {
+    color:#1C1C1C;
+}
+#headerbar {
+display: flex;
+width: auto;
+background: linear-gradient(to top, #2F7A4F, #DFF5E1);
+padding:2rem;
+border-bottom:#1C1C1C 0.2rem solid;
+font: bold 1.2rem Arial, sans-serif;
+}
+
+#headerbar :hover {
+    color:steelblue;
+}
+
+/*LOGOUT Button*/
+form .btnlogout {
+    padding:10px 15px;
+    color: #e2697b;
+    border:#f05858 2px solid;
+    background-color: #e2697b;
+}
+
+/* Booking Date Selection Styles */
+.date-btn {
+    padding: 8px 12px;
+    margin: 4px;
+}
+.hotel-btn {
+    padding: 8px 12px;
+    margin: 4px;
+}
+.date-btn.selected {
+    background-color: orange;   
+    color: white;
+    border: 2px solid darkorange;
+}
+.hotel-btn.selected {
+    background-color: orange;   
+    color: white;
+    border: 2px solid darkorange;
+}
+.range-selected {
+    background-color: orange;
+    color: white;
+}
+
+#btnsubmit {
+    padding: 10px 15px;
+    background-color: #2F7A4F;
+    color:white;
+    border:#2F7A4F 2px solid;
+    display: none;
+}
+
+/* Ticket Styling */
+.ticketbox {
+    display: flex;
+    flex-direction:column;
+    width: 15rem;
+    background: #fff;
+    border: 2px dashed #888;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 0px;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    margin-left:460px;
+    margin-right:auto;
+    margin-top:-225px;
+}
+
+.ticketheader {
+    display:block;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.ticketdivider {
+    height: 1px;
+    background: #000000;
+}
+
