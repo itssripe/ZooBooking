@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+
+
+#headerbar {
+    display: flex;
+    width: auto;
+    border-radius: 5%;
+    background: linear-gradient(to left, rgba(30, 30, 30, 0.0), rgb(15, 60, 15, 0.8) );
+    padding:1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    justify-content: space-evenly;
+}
+
+
+body {
+    padding:0%;
+    margin:0%;
+    background-image: url("/OSP_T2/Images/lionhomepage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+    background-color: #DFF5E1;
+    font-family: 'BBH Bogle', sans-serif;
+}
+
+
+.options {
+    background-image: url('/OSP_T2/Images/options.png'); 
+    background-size: cover;
+    width:40px;
+    height:40px;
+}
+
+.options-container {
+    display:flex;
+    height: 50%;
+    width: 50%;
+    
+}
+.options-dropdown {
+    display: flex;
+    flex-direction: column;
+    width:5%;
+    height:2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    content-visibility: hidden;
+}
+
+.options-dropdown :hover {
+    content-visibility: visible;
+}

@@ -13,7 +13,7 @@ session_start();
     <body>
     <nav id="headerbar">
         <a href="/OSP_T2/Templates/Homepage.html"><img src="/OSP_T2/Images/ZooLogo.png"></a>
-        <a href="/OSP_T2/Templates/UserLoginForm">SignUp/Login</a>
+        <a href="/OSP_T2/Templates/UserLoginForm.html">SignUp/Login</a>
         <a href="/OSP_T2/Templates/BookZoo.php">Book Tickets</a>
         <a href="/OSP_T2/Templates/BookHotel.php">Book Hotels</a>
         <a href="/OSP_T2/Templates/ContactUs.html">Contact Us</a>
@@ -22,38 +22,15 @@ session_start();
 
         <h1>Book Your Zoo Visit</h1>
         <p>Use the buttons below to book your date to visit the zoo.</p>
-        <div>we accept bookings for the following 2 weeks</div>
         <div id="container"></div>
+        
+        
+
+        <label for="date">Select a date:</label>
+        <input type="date" id="datepicker" name="date">
 
 
 
-<script>
-const container = document.getElementById("container");
-
-for (let i = 0; i < 14; i++) {
-    let date = new Date();
-    date.setDate(date.getDate() + i);
-
-    let formatted = date.toISOString().split('T')[0];
-
-    let btn = document.createElement("button");
-    btn.innerText = formatted;
-    btn.classList.add("date-btn");
-    btn.type = "button";
-    btn.onclick = () => {
-        document.querySelectorAll(".date-btn").forEach(b =>
-            b.classList.remove("selected")
-        );
-
-        btn.classList.add("selected");
-
-        document.getElementById("selectedDateDisplay").innerText = formatted;
-        document.getElementById("bookingDate").value = formatted;
-        document.getElementById("btnsubmit").style.display = "block";};
-
-    container.appendChild(btn);
-    }
-    </script>
 
 <div>Select number of tickets:</div>
 <div class='stepper'>
@@ -92,6 +69,16 @@ function decrement() {
 }
 }
 </script>
+        <script>
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById("datepicker").setAttribute('min', today);
+            datepicker = document.getElementById("datepicker");
+            
+            document.getElementById("selectedDateDisplay").innerText = today;
+            document.getElementById("bookingDate").value = today;
+
+        
+        </script>
 
     </body>
 

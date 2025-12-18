@@ -13,7 +13,7 @@ session_start();
     <body>
     <nav id="headerbar">
         <a href="/OSP_T2/Templates/Homepage.html"><img src="/OSP_T2/Images/ZooLogo.png"></a>
-        <a href="/OSP_T2/Templates/UserLoginForm">SignUp/Login</a>
+        <a href="/OSP_T2/Templates/UserLoginForm.html">SignUp/Login</a>
         <a href="/OSP_T2/Templates/BookZoo.php">Book Tickets</a>
         <a href="/OSP_T2/Templates/BookHotel.php">Book Hotels</a>
         <a href="/OSP_T2/Templates/ContactUs.html">Contact Us</a>
