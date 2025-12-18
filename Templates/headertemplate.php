@@ -17,12 +17,16 @@
         <a href="/OSP_T2/Templates/AccountPage.php">My Account</a>
         </nav>
         <div class="options-container">
-            <a class="options-dropdown" href="/OSP_T2/Templates/AccountPage.php" value="profile">Profile</option>
-            <a class="options-dropdown" value="settings">Settings</option>
-            <a class="options-dropdown" value="logout">Logout</option>
+            <a class="options-dropdown" href="/OSP_T2/Templates/AccountPage.php" value="profile">Profile</a>
+            <a class="options-dropdown" href="#" value="settings">Settings</a>
+            <a class="options-dropdown" href="#" value="logout">Logout</a>
         </div>
+
+    <main>
+
+    </main>
     
-    <footer>
+    <footer id="footerbar">
         <p>all rights reserved © 2024 Zoo Booking System</p>
 </body>
 </html>

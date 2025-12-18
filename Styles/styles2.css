@@ -1,6 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
 
 
+
+
+body {
+    padding:0%;
+    margin:0%;
+    background-image: url("/OSP_T2/Images/lionhomepage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y:hidden;
+    background-color: #DFF5E1;
+    font-family: 'BBH Bogle', sans-serif;
+    font-size: 2rem;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+main {
+    flex:1;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    display:block;
+    position:relative;
+    padding:2px;
+    background:transparent;
+    
+}
+a:hover {
+    transform : translateY(-0.2rem);
+} 
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+
 #headerbar {
     display: flex;
     width: auto;
@@ -10,19 +61,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     justify-content: space-evenly;
 }
-
-
-body {
-    padding:0%;
-    margin:0%;
-    background-image: url("/OSP_T2/Images/lionhomepage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x:hidden;
-    background-color: #DFF5E1;
-    font-family: 'BBH Bogle', sans-serif;
+#footerbar {
+    display:flex;
+    width:auto;
+    color:white;
+    background:black;
+    padding:1rem;
+    justify-content:center;
+    align-items:center;
 }
-
 
 .options {
     background-image: url('/OSP_T2/Images/options.png'); 
@@ -43,9 +90,9 @@ body {
     width:5%;
     height:2%;
     background-color: rgba(255, 255, 255, 0.8);
-    content-visibility: hidden;
+    display: none;
 }
 
-.options-dropdown :hover {
-    content-visibility: visible;
+.options-dropdown:hover {
+    display: flex;
 }
